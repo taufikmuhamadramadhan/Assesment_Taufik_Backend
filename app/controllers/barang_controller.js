@@ -16,8 +16,8 @@ exports.create = async (req, res) => {
 
     // Create a barang with a formatted KodeBarang
     const newBarang = {
-      KodeBarang: `BRG${nim}${incrementedNumericPart}`,
-      NamaBarang: req.body.NamaBarang + ` ${nama}`,
+      KodeBarang: req.body.KodeBarang,
+      NamaBarang: req.body.NamaBarang,
       Satuan: req.body.Satuan,
       HargaSatuan: req.body.HargaSatuan,
       Stok: req.body.Stok,

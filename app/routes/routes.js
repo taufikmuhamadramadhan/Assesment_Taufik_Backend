@@ -12,6 +12,8 @@ module.exports = (app) => {
 
   app.get("/api/barang/", barang.findAll);
 
+  app.get("/api/barang/:id", barang.findOne);
+
   app.post("/api/barang/create", barang.create);
 
   app.put("/api/barang/update/:id", barang.update);
